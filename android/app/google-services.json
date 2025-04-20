@@ -12,7 +12,20 @@
           "package_name": "com.example.flutter_testovoe_tredo"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "726016353129-ok0od4ids6bgi3vras21n1inqdf67gue.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_testovoe_tredo",
+            "certificate_hash": "0bca419c009f5de32e84b15132eb871b99e73568"
+          }
+        },
+        {
+          "client_id": "726016353129-3ff1ro5q8skdn1sjag3tkm7v3pm8ce2k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCCmP8cY5Pu5w6Put5YxfZEkX4x5WSxcDw"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726016353129-3ff1ro5q8skdn1sjag3tkm7v3pm8ce2k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "726016353129-pbp8vijlfeqoccjlbu949fu50kq5ql3v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterTestovoeTredo"
+              }
+            }
+          ]
         }
       }
     }

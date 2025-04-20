@@ -86,7 +86,8 @@ Future<void> sendMessage(MessageModel message) async{
   int unreadCount = 0;
   if(recipientChatDoc.exists){
     final data = recipientChatDoc.data();
-    unreadCount = (data?['unread'] as int) ?? 0;
+    unreadCount = (data?['unread'] ?? 0) as int;
+
   }
 
 

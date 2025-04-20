@@ -1,8 +1,10 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_testovoe_tredo/presentations/pages/auth/login_page.dart';
+import 'package:flutter_testovoe_tredo/app.dart';
 
-void main() {
-  runApp(const LoginPage());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+
+  runApp(MyApp());
 }
-
-

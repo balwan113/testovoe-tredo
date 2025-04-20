@@ -33,6 +33,15 @@ factory UserModel.fromFireStore(DocumentSnapshot doc){
     isOnline: data['isOnline']?? false,
   );
 }
+Map<String, dynamic> toMap() {
+  return {
+    'name': name,
+    'email': email,
+    'photoUrl': photoUrl,
+    'lastActive': lastActive,
+    'isOnline': isOnline,
+  };
+}
 
 UserModel copyWith({
   String? id,

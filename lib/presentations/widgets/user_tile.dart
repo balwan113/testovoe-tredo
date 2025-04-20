@@ -52,8 +52,8 @@ class UserTile extends StatelessWidget {
                 const SizedBox(width: 6),
                 Text(
                   user.isOnline
-                      ? 'Online'
-                      : 'Last seen ${_formatLastSeen(user.lastActive)}',
+                      ? 'В сети'
+                      : 'Был в ${_formatLastSeen(user.lastActive)}',
                   style: TextStyle(
                     color: Colors.grey[600],
                     fontSize: 13,
@@ -77,9 +77,9 @@ class UserTile extends StatelessWidget {
     );
 
     if (lastActiveDate == today) {
-      return 'today at ${DateFormat.Hm().format(lastActive)}';
+      return 'Сегодня в ${DateFormat.Hm().format(lastActive)}';
     } else if (lastActiveDate == yesterday) {
-      return 'yesterday at ${DateFormat.Hm().format(lastActive)}';
+      return 'вчера в ${DateFormat.Hm().format(lastActive)}';
     } else {
       return DateFormat.yMMMd().format(lastActive);
     }

@@ -52,10 +52,9 @@ class _MessageInputState extends State<MessageInput> {
           IconButton(
             icon: const Icon(Icons.attach_file),
             onPressed: () {
-              // TODO: Implement file attachment
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(
-                  content: Text('Attachment feature coming soon'),
+                  content: Text('Функция вложения появится скоро'),
                   duration: Duration(seconds: 1),
                 ),
               );
@@ -66,7 +65,7 @@ class _MessageInputState extends State<MessageInput> {
               controller: _controller,
               textCapitalization: TextCapitalization.sentences,
               decoration: const InputDecoration(
-                hintText: 'Type a message...',
+                hintText: 'Введите сообщение...',
                 border: InputBorder.none,
                 contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               ),
@@ -85,10 +84,9 @@ class _MessageInputState extends State<MessageInput> {
           IconButton(
             icon: const Icon(Icons.emoji_emotions_outlined),
             onPressed: () {
-              // TODO: Implement emoji picker
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(
-                  content: Text('Emoji picker coming soon'),
+                  content: Text('Скоро появится средство выбора эмодзи'),
                   duration: Duration(seconds: 1),
                 ),
               );
@@ -105,10 +103,9 @@ class _MessageInputState extends State<MessageInput> {
                 : IconButton(
                     icon: const Icon(Icons.mic),
                     onPressed: () {
-                      // TODO: Implement voice message
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(
-                          content: Text('Voice message feature coming soon'),
+                          content: Text('Функция голосовых сообщений появится скоро'),
                           duration: Duration(seconds: 1),
                         ),
                       );

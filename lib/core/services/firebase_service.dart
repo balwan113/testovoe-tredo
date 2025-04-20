@@ -1,7 +1,6 @@
 
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:dartz/dartz.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -57,7 +56,6 @@ class FirebaseService {
   await _requestNotificationPermissions(); 
  _messaging!.onTokenRefresh.listen(_saveFcmToken);
     
-    // Also save the current token if available
     final token = await _messaging!.getToken();
     if (token != null) {
       await _saveFcmToken(token);

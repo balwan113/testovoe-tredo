@@ -18,7 +18,7 @@ AuthRemoteDataSourceImpl({required FirebaseFirestore firestore}) : _firestore = 
 @override 
 Future<void> saveUserData(UserModel user) async{
   await _firestore.collection('users').doc(user.id).set(
-    user as Map<String, dynamic>,
+    user.toMap(),
     SetOptions(merge: true),
   );
 }
@@ -35,7 +35,7 @@ Future<void> updateUserOnlineStatus(String userid, bool isOnline) async{
 
   @override
   Future<UserModel> getUserById(String userid)async  {
-final docsnapshot = await _firestore.collection('user').doc(userid).get();
+final docsnapshot = await _firestore.collection('users').doc(userid).get();
 if(docsnapshot.exists){
   return UserModel.fromFireStore(docsnapshot);
 }else{

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "726016353129",
+    "project_id": "testovoe-tredo-f2df4",
+    "storage_bucket": "testovoe-tredo-f2df4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726016353129:android:15504b84eded09684953f8",
+        "android_client_info": {
+          "package_name": "com.example.flutter_testovoe_tredo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCmP8cY5Pu5w6Put5YxfZEkX4x5WSxcDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
